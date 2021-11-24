@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Typical HTML Web Outline</title>
+    <meta charset="UTF-8">
+    <Style background color="black" color="white"></Style>
+    <link rel="stylesheet" href="./survey-form.css">
+</head>
+
+<div class="container">
+
+    <header class="header">
+
+        <h1 id="title" class="text-center">Small Group Strategies Content Questionnaire</h1>
+        <p id="thanks" class="thanks-text-center">
+            We appreciate taking the time to enable us to better server you
+        </p>
+
+    </header>
+
+    <form id="small-group-survey" action="#">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="enter your name"
+            required
+            />
+        </div>
+
+        <div class="form-group">
+            <label id="email-label"
+    for="email">Email</label>
+        <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+            />
+        </div>
+
+        <div class="form-group">
+            <label id="number-label"
+    for="number">
+                Age<span class="clue">(optional)</span></label>
+            <input
+                name="age"
+                id="number"
+                type="number"
+                class="form-control"
+                min="10"
+                max="99"
+                placeholder="Age"
+            />
+        </div>
+
+        <div class="form-group">
+            <p>What areas of learning interest you?
+                <span class="clue">(Check all that apply)</span></p>
+            
+            <label id="interests">
+                <input
+                    name="interests"
+                    value="theology"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Theology</label
+            >
+
+            <label>
+                <input
+                    name="interests"
+                    value="interpretation"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Biblical interpretation</label
+                >
+
+            <label>
+                <input
+                    name="interests"
+                    value="history"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Church History</label
+            >
+
+            <label >
+                <input
+                name="interests"
+                value="apologetics"
+                type="checkbox"
+                class="input-checkbox"
+                >Apologetics</label
+            >
+            <label>
+                <input
+                name="interests"
+                value="finance"
+                type="checkbox"
+                class="input-checkbox"
+                >Biblical Financial Principles
+            </label>
+
+            <label>
+                <input
+                name="interest"
+                class="input-checkbox"
+                value="local-service"
+                type="checkbox"
+                >Spiritual Gifts/Local Service
+            </label>
+
+            <label>
+                <input
+                class="input-checkbox"
+                name="interests"
+                value="relationships"
+                type="checkbox"
+                >Relationships
+            </label>
+
+            <label>
+                <input
+                class="input-checkbox"
+                name="interests"
+                value="ot-schol"
+                type="checkbox"
+                >Old Testament Scholarship
+            </label>
+
+            <label>
+                <input
+                class="input-checkbox"
+                name="interests"
+                value="nt-schol"
+                type="checkbox"
+                >New Testament Scholarship
+            </label>
+
+            <label>
+                <input
+                class="input-checkbox"
+                name="interests"
+                value="specific-book"
+                type="checkbox"
+                >Specific book of the Bible
+            </label>
+
+        </div>
+
+        <div class="form-group">
+            <p>If you checked relationships, which relations did you mean?
+                <span class="clue">(Marriage, friendship, parenting, etc.)</span>
+            </p>
+                <textarea
+                    id="relationship-type"
+                    class="input-textarea"
+                    name="relationship-type"
+                    placeholder="Type here..."
+                ></textarea>
+        </div>
+
+        <div class="form-group">
+            <p>If you checked a specific book of the Bible, which Bible
+                 interests you most at the moment?
+            </p>
+            <textarea
+                id="book-choice"
+                class="input-textarea"
+                name="book-choice"
+                placeholder="Enter which book(s) here..."
+            ></textarea>
+        </div>  
+                
+
+            
+            <p>Do your child-care needs effect your ability to commit to small group?</p>
+        <div class="form-group">
+
+            <label>
+                <input
+                    name="child-needs"
+                    value="no"
+                    type="radio"
+                    class="child-radio"
+                    checked
+                />No</label>
+
+                <label>
+                    <input
+                        name="child-needs"
+                        value="yes"
+                        type="radio"
+                        class="child-radio"
+                    />Yes</label>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <p>If you need child-care assistance for small-group availabilty,
+                 what times would you need said assistance? Please list specific
+                 days and times.</p>
+                 <textarea
+                     id="child-time"
+                     name="child-time"
+                     class="child-textarea"
+                     placeholder="Enter days/times here...">
+                </textarea>
+
+        </div>
+
+        <div class="form-group">
+            <p>On what days do you have availability?</p>
+            <select id="best-night" name="best-night" class="form-control"
+            required>
+                <option disabled selected value>Select a day</option>
+                <option
+                value="monday">Monday</option>
+                <option
+                value="tuesday">Tuesday</option>
+                <option
+                value="wednesday">Wednesday</option>
+                <option
+                value="thursday">Thursday</option>
+                <option
+                value="friday">Friday</option>
+                <option
+                value="saturday">Saturday</option>
+        </select>
+
+        <div class="form-group">
+            <p>What times are best for you?<span class="clue">
+                (Check all that apply)</span></p>
+                <label
+                >
+                    <input
+                        name="hour"
+                        value="five-six"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />1 to 2 p.m.
+                </label>
+
+                <label>
+                    <input
+                        name="hour"
+                        value="five-six"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />2 to 3 p.m.
+                </label>
+
+                <label>
+                    <input
+                        name="hour"
+                        value="five-six"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />3 to 4 p.m.
+                </label>
+
+                <label>
+                    <input
+                        name="hour"
+                        value="five-six"
+                        type="checkbox"
+                        class="input-checkbox"
+                />4 to 5 p.m.</label>
+
+                <label>
+                    <input
+                        name="hour"
+                        value="five-six"
+                        type="checkbox"
+                        class="input-checkbox"
+                />4 to 6 p.m.</label>
+
+                <label>
+                    <input
+                        name="hour"
+                        value="five-six"
+                        type="checkbox"
+                        class="input-checkbox"
+                />6 to 7 p.m.</label>
+                
+                <label>
+                    <input
+                        name="hour"
+                        value="five-six"
+                        type="checkbox"
+                        class="input-checkbox"
+                />7 to 8 p.m.</label>
+
+                <label>
+                    <input
+                        name="hour"
+                        value="five-six"
+                        type="checkbox"
+                        class="input-checkbox"
+                />8 to 9 p.m.</label>
+        </div>
+
+        <div class="form-group">
+            <p>Feel free to touch on anything we did not address below:</p>
+            <textarea
+                id="comments"
+                class="input-textarea"
+                name="comments"
+                placeholder="Let us know here...">
+            </textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+            </button>
+        </div>
+    </form>
+</div>
